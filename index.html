@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Квартира</title>
+	<link rel="shortcut icon" href="./img/favicon.png" type="image/png" />
+	<link rel="stylesheet" href="./css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="slick/slick.css" />
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+	<link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+	<!-- Шапка сайта -->
+	<main>
+		<header class="header">
+			<div class="container">
+				<div class="header-menu">
+					<input type="checkbox" id="menu__toggle">
+					<label for="menu__toggle" class="menu__btn">
+						<span></span>
+					</label>
+					<ul class="menu__box">
+						<li class="menu__item header-list"><a href="index.html">Главная</a></li>
+						<li class="menu__item header-list"><a href="#sec2">Услуги и цены</a></li>
+						<li class="menu__item header-list"><a href="#sec3">Почему именно мы?</a></li>
+						<li class="menu__item header-list"><a href="#sec4">Реализованные проекты</a></li>
+						<li class="menu__item header-list"><a href="#sec6">Как мы работаем</a></li>
+						<li class="menu__item header-list"><a href="#sec7">Отзывы</a></li>
+						<li class="menu__item header-list"><a href="#sec8">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="header-logo">
+					<div class="row">
+						<div class="col-lg-4 col-md-4 col-sm-5 col-xs-12 wrap">
+							<div class="logo wrap-block">
+								<img src="./img/logo-majorSP.png" alt="Ремонтно строительная компания" />
+							</div>
+							<div class="logo-text wrap-block">
+								<p class="header-text">
+									Ремонтно строительная <br />
+									компания <br />
+									MAJORSP Ремонт
+								</p>
+							</div>
+						</div>
+						<div
+							class="col-lg-5 col-lg-offset-3 col-md-5 col-md-offset-3 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-0 tel">
+							<div class="header-tel call">
+								<p class="header-tel_number">
+									<a href="tel:+84993981882">8 499 398 18 82 </a><br />
+									<a href="tel:+89261373825">8 926 137 38 25</a>
+								</p>
+								<small>Режим работы: с 9:00-21:00</small>
+							</div>
+							<div class="header-btn call">
+								<button class="header-button popup-btn">Заказать звонок</button>
+								<p><a href="mailto:info@major-sp.ru">info@major-sp.ru</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+	</main>
+
+	<!-- Блок - Качественный ремонт квартир и форма -->
+	<section class="secondary">
+		<div class="container second-content">
+			<div class="row">
+				<div class="col-lg-6 col-md-7 col-sm-12">
+					<h1>Качественный ремонт квартир, <br>
+						коттеджей , офисов <br>
+						в Москве и Московской области
+					</h1>
+					<div class="warranty">
+						<div class="price warranty-block">
+							<div class="block-2">
+								<img src="./img/money-box.png" alt="Доступные цены">
+								<p class="price-text">
+									Доступные <br>
+									цены
+								</p>
+							</div>
+						</div>
+						<div class="guarantee warranty-block">
+							<div class="block-2">
+								<img src="./img/guarantee.png" alt="Гарантия и договор">
+								<p class="guarantee-text">
+									Гарантия <br>
+									и договор
+								</p>
+							</div>
+						</div>
+						<div class="spector warranty-block">
+							<div class="block-2">
+								<img src="./img/spector.png" alt="Полный спектр услуг">
+								<p class="spector-text">
+									Полный спектр <br>
+									услуг
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="main-trigger">
+						<p>
+							Более 300 клиентов уже убедились <br>
+							в качестве наших работ!
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-0 col-sm-12 col-sm-offset-0">
+					<div class="form">
+						<h2>Оставьте заявку </h2>
+						<h4>на бесплатный замер <br>
+							и расчет сметы!
+						</h4>
+						<form action="#" method="post">
+							<input class="form-input user-input" required type="text" placeholder="Ваше имя">
+							<input id="phone-mask1" class="form-input tel-input" required type="text"
+								placeholder="Ваш телефон">
+							<input class="form-input mail-input" required type="text" placeholder="Ваш e-mail">
+							<button class="form-btn" type="submit">Отправить заявку</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Блок - Услуги и цены -->
+	<section id="sec2" class="prices">
+		<div class="container third-content">
+			<div class="prices-h">
+				<h1>Услуги и цены</h1>
+				<span class="prices-span"></span>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+					<div class="block">
+						<h3>Косметический ремонт</h3>
+						<img src="./img/komnata.png" alt="Косметический ремонт">
+						<ul class="prices-list">
+							<li>
+								<div class="list-inside">оклейка стен обоями или покраска </div>
+							</li>
+							<li>
+								<div class="list-inside">укладка покрытия на пол </div>
+							</li>
+							<li>
+								<div class="list-inside">замена розеток и выключателей </div>
+							</li>
+							<li>
+								<div class="list-inside">установка сантехнического оборудования </div>
+							</li>
+							<li>
+								<div class="list-inside">покраска потолков </div>
+							</li>
+							<li>
+								<div class="list-inside">покраска труб, радиаторов </div>
+							</li>
+							<li>
+								<div class="list-inside">консультация специалиста </div>
+							</li>
+						</ul>
+						<div class="block-metr">
+							<p>от 1 500 руб/м<sup>2</sup> </p>
+							<button class="form-btn prices-btn money-btn1">Консультация специалиста</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+					<div class="block">
+						<h3>капитальный ремонт</h3>
+						<img src="./img/komnata.png" alt="капитальный ремонт">
+						<p class="block-tag">То же, что и в косметическом ремонте, а так же: </p>
+						<ul class="prices-list">
+							<li>
+								<div class="list-inside">выравнивание и шпатлевка стен </div>
+							</li>
+							<li>
+								<div class="list-inside">выравнивание полов</div>
+							</li>
+							<li>
+								<div class="list-inside">выравнивание потолков </div>
+							</li>
+							<li>
+								<div class="list-inside">разводка внутренней электропроводки</div>
+							</li>
+							<li>
+								<div class="list-inside">разводка сантехнических труб </div>
+							</li>
+							<li>
+								<div class="list-inside">укладка плитки в санузлах </div>
+							</li>
+						</ul>
+						<div class="block-metr">
+							<p>от 4 300 руб/м<sup>2</sup> </p>
+							<button class="form-btn prices-btn money-btn2">Консультация специалиста</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+					<div class="block">
+						<h3>евроремонт </h3>
+						<img src="./img/komnata.png" alt="евроремонт">
+						<p class="block-tag">Все что входит в капитальный ремонт, а так же: </p>
+						<ul class="prices-list">
+							<li>
+								<div class="list-inside">двухуровневые потолки из гипсокартона или натяжные</div>
+							</li>
+							<li>
+								<div class="list-inside">устройство потолков в санузлах</div>
+							</li>
+							<li>
+								<div class="list-inside">укладка паркетной доски и тд</div>
+							</li>
+							<li>
+								<div class="list-inside">устройство теплых полов</div>
+							</li>
+							<li>
+								<div class="list-inside">устройство арок из гипсокартона</div>
+							</li>
+							<li>
+								<div class="list-inside">устройство перегородок с нишами</div>
+							</li>
+							<li>
+								<div class="list-inside">устройство разных видов подсветок и освещения</div>
+							</li>
+							<li>
+								<div class="list-inside">укладка керамической плитки с декором</div>
+							</li>
+						</ul>
+						<div class="block-metr">
+							<p>от 5 500 руб/м<sup>2</sup> </p>
+							<button class="form-btn prices-btn money-btn3">Консультация специалиста</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="other">
+				<h2>Вас интересуют другие услуги? </h2>
+				<p>Закажите обратный звонок и наш специалист проконсультирует вас.</p>
+				<button class="form-btn money-btn4">ЗАКАЗАТЬ ЗВОНОК</button>
+			</div>
+		</div>
+	</section>
+
+	<!-- Блок - Почему более 300 клиентов выбрали именно нас? -->
+	<section id="sec3" class="select">
+		<div class="container fouth-content">
+			<div class="prices-h">
+				<h1>Почему более 300 клиентов выбрали именно нас? </h1>
+				<span class="prices-span"></span>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 select-block1">
+					<ul class="select-list">
+						<li>
+							<div class="child-list"> Выгодные цены</div>
+						</li>
+						<li>
+							<div class="child-list">Мы даем полную гарантию на все виды работ до 10 лет </div>
+						</li>
+						<li>
+							<div class="child-list">В нашей компании работают квалифицированные мастера
+								с опытом работы от 5 лет
+							</div>
+						</li>
+						<li>
+							<div class="child-list">Мы всегда можем предложить своим клиентам высокий уровень сервиса
+							</div>
+						</li>
+						<li>
+							<div class="child-list">К каждому обьекту прикрепляется инженер для контроля за работой
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-4 col-md-4  col-sm-12 col-xs-12  select-block2">
+					<ul class="select-list">
+						<li>
+							<div class="child-list">Мы сами выполняем все виды работ без привлечения сторонних
+								организаций</div>
+						</li>
+						<li>
+							<div class="child-list">Мы контролируем
+								каждый этап производства работ </div>
+						</li>
+						<li>
+							<div class="child-list">Бесплатный замер и составление сметы в удобное время для Вас </div>
+						</li>
+						<li>
+							<div class="child-list">Наши специалисты подберут для Вас экологически чистые строительные
+								материалы </div>
+						</li>
+						<li>
+							<div class="child-list">Мы проводим шумные работы только в установленное законодательством
+								время </div>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12  select-block3">
+					<ul class="select-list">
+						<li>
+							<div class="child-list">Мы закупаем качественные материалы по оптовым ценам </div>
+						</li>
+						<li>
+							<div class="child-list">У нас всегда есть
+								порадующие Вас Скидки и Акции </div>
+						</li>
+						<li>
+							<div class="child-list">Стоимость работ фиксируется перед подписанием договора и не подлежит
+								изменению </div>
+						</li>
+						<li>
+							<div class="child-list">Мы четко соблюдаем установленные сроки работ </div>
+						</li>
+						<li>
+							<div class="child-list">У нас не работают гости
+								из солнечной Азии
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Блок - Реализованные проекты -->
+	<section id="sec4" class="projects">
+		<div class="container">
+			<div class="prices-h">
+				<h1>Реализованные проекты </h1>
+				<span class="prices-span"></span>
+			</div>
+			<div class="projects-slider">
+				<div class="projects-block">
+					<div class="block-img">
+						<img src="./img/room1.png" alt="Реализованные проекты 1">
+					</div>
+					<h3>Косметический ремонт квартиры, <br> объединение комнат аркой</h3>
+					<p class="slider-text">
+						Сроки: 2 месяца <br>
+						Стоимость: 230 000 руб.
+					</p>
+				</div>
+				<div class="projects-block">
+					<div class="block-img">
+						<img src="./img/room2.png" alt="Реализованные проекты 2">
+					</div>
+					<h3>Косметический ремонт квартиры, <br> объединение комнат аркой</h3>
+					<p class="slider-text">
+						Сроки: 2 месяца <br>
+						Стоимость: 230 000 руб.
+					</p>
+				</div>
+				<div class="projects-block">
+					<div class="block-img">
+						<img src="./img/room3.png" alt="Реализованные проекты 3">
+					</div>
+					<h3>Косметический ремонт квартиры, <br> объединение комнат аркой</h3>
+					<p class="slider-text">
+						Сроки: 2 месяца <br>
+						Стоимость: 230 000 руб.
+					</p>
+				</div>
+				<div class="projects-block">
+					<div class="block-img">
+						<img src="./img/room2.png" alt="Реализованные проекты 4">
+					</div>
+					<h3>Косметический ремонт квартиры,<br> объединение комнат аркой</h3>
+					<p class="slider-text">
+						Сроки: 2 месяца <br>
+						Стоимость: 230 000 руб.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Блок - Дизайн-проект квартиры в подарок! -->
+	<section class="gifts">
+		<div class="container fifth-content">
+			<div class="row">
+				<div class="col-lg-7 col-md-7 col-sm-6">
+					<h1>Дизайн-проект квартиры в подарок!</h1>
+					<p class="gifts-text">
+						Заполните форму заявки, чтобы получить дизайн-проект абсолютно бесплатно.
+					</p>
+				</div>
+				<div class="col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-6 col-sm-offset-0">
+					<div class="form">
+						<h2>Оставьте заявку, </h2>
+						<h4>чтобы получить <br>
+							дизайн-проект бесплатно!
+						</h4>
+						<div class="timeout">
+							<small class="dedline">До окончания акции осталось:</small>
+							<div class="gift-time">
+								<div class="gift-time1 time0">
+									<p>02</p>
+									<div></div>
+								</div>
+								<small>дней</small>
+							</div>
+							<div class="gift-time">
+								<div class="gift-time2 time0">
+									<p>02</p>
+									<div></div>
+								</div>
+								<small>часов</small>
+							</div>
+							<div class="gift-time">
+								<div class="gift-time3 time0">
+									<p>02</p>
+									<div></div>
+								</div>
+								<small>минут</small>
+							</div>
+							<div class="gift-time">
+								<div class="gift-time4 time0">
+									<p>02</p>
+									<div></div>
+								</div>
+								<small>секунд</small>
+							</div>
+						</div>
+						<form action="#" method="post">
+							<input class="form-input user-input" required type="text" placeholder="Ваше имя">
+							<input id="phone-mask2" class="form-input tel-input" required type="text"
+								placeholder="Ваш телефон">
+							<input class="form-input mail-input" required type="text" placeholder="Ваш e-mail">
+							<button class="form-btn" type="submit">Отправить заявку</button>
+						</form>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</section>
+
+	<!-- Блок - Как мы работаем -->
+	<section id="sec6" class="works">
+		<div class="container sixth-content">
+			<div class="prices-h">
+				<h1>Как мы работаем </h1>
+				<span class="prices-span"></span>
+			</div>
+			<div class="works-block">
+				<div class="works-block_wrap">
+					<div class="wrap-img">
+						<img src="./img/hand.png" alt="Вы оставляете заявку">
+					</div>
+					<div class="capture">
+						<h3>Вы оставляете заявку</h3>
+						<button class="works-btn form-btn">Оставить заявку</button>
+					</div>
+				</div>
+				<div class="arrow1 ar">
+					<img src="./img/arrow.png" alt="arrow">
+				</div>
+				<div class="works-block_wrap">
+					<div class="wrap-img">
+						<img src="./img/circle.png" alt="Мы выезжаем на бесплатный замер">
+					</div>
+					<div class="capture">
+						<h3>Мы выезжаем на бесплатный замер
+							и составляем детализированную <br> смету</h3>
+					</div>
+				</div>
+				<div class="arrow2 ar">
+					<img src="./img/arrow.png" alt="arrow">
+				</div>
+				<div class="works-block_wrap">
+					<div class="wrap-img">
+						<img src="./img/books.png" alt="Подписываем договор">
+					</div>
+					<div class="capture">
+						<h3>Подписываем договор
+							об оказании услуг</h3>
+					</div>
+				</div>
+			</div>
+			<div class="works-block">
+				<div class="works-block_wrap">
+					<div class="wrap-img">
+						<img src="./img/car.png" alt="Вы оставляете заявку">
+					</div>
+					<div class="capture">
+						<h3>Мы сами заказываем и доставляем материалы, поэтому вы получаете их по самым низким
+							ценам!</h3>
+					</div>
+				</div>
+				<div class="arrow3 ar">
+					<img src="./img/arrow.png" alt="arrow">
+				</div>
+				<div class="works-block_wrap">
+					<div class="wrap-img">
+						<img src="./img/shipping.png" alt="Мы выезжаем на бесплатный замер">
+					</div>
+					<div class="capture">
+						<h3>Выполняем работы по договору, сдаем и подписываем акт приему-сдачи.</h3>
+					</div>
+				</div>
+				<div class="arrow4 ar">
+					<img src="./img/arrow.png" alt="arrow">
+				</div>
+				<div class="works-block_wrap">
+					<div class="wrap-img">
+						<img src="./img/cube.png" alt="Подписываем договор">
+					</div>
+					<div class="capture">
+						<h3>Вы получаете свою долгожданную уютную квартиру мечты.
+							При этом экономите свое драгоценное время, нервы и деньги.</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Блок - Что говорят наши клиенты-->
+	<section id="sec7" class="clients">
+		<div class="container seventh-content">
+			<div class="prices-h">
+				<h1>Что говорят наши клиенты</h1>
+				<span class="prices-span"></span>
+			</div>
+			<div class="clients-block">
+				<div class="clients-block_wrap">
+					<div class="clients-img"><img src="./img/accaunt.png" alt="Иван Анатольевич Завацкий"></div>
+					<div class="clients-text">
+						<small>Иван Анатольевич Завацкий</small>
+						<p>
+							Заказал ремонт квартиры у Мэйджор Строй Проект в ЖК Опушкино. Квартира 96 кв.м. сделали за
+							2,5 месяца, я только приезжал раз в 2 недели посмотреть как идут работы и привозил обои,
+							сантехнику и тд.
+							<i>Все работы выполнены полностью и в срок нареканий никаких не было. </i>
+						</p>
+					</div>
+				</div>
+				<div class="clients-block_wrap">
+					<div class="clients-img"><img src="./img/accaunt.png" alt="Панфилов Олег Геннадьевич"></div>
+					<div class="clients-text">
+						<small>Панфилов Олег Геннадьевич</small>
+						<p>
+							Спасибо компании Major Строй проект. Одновременно с соседом заказали ремонт одинаковых
+							квартир в разных фирмах. Ему еще делают, а я уже месяц наслаждаюсь своей новой прекрасной
+							квартирой.
+						</p>
+					</div>
+				</div>
+				<div class="clients-block_wrap">
+					<div class="clients-img"><img src="./img/accaunt.png" alt="Инна"></div>
+					<div class="clients-text">
+						<small>Инна</small>
+						<p>
+							Заказали с мужем ремонт двушки и окна пвх в Major Строй проект, окна вышли намного дешевле
+							чем у других.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Блок - Контакты карты-->
+	<section id="sec8" class="map">
+		<iframe
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1334.7262276061413!2d37.67821585087317!3d55.76314024434094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a9b24c8b955%3A0xb10dd903df6c59f2!2z0KDQsNC00LjQviDRg9C7Liwg0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1580292762562!5m2!1sru!2sru"
+			width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+		<div class="container">
+			<div class="contact-block">
+				<div class="h1hr">
+					<h1>Контакты</h1>
+					<div class="hr"></div>
+				</div>
+				<div class="block-city">
+					<p>г. Такой-то, <br>
+						ул. Солнечная,12</p>
+				</div>
+				<div class="block-tel">
+					<div class="tele2">
+						<a href="tel:+74993981882">8 499 398 18 82</a> <br>
+						<a href="tel:+79261373825">8 926 137 38 25</a>
+					</div>
+				</div>
+				<div class="block-mail">
+					<a href="mailto:info@major-sp.ru">info@major-sp.ru</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 s">
+					<div class="map-question1 map-question">
+						<p>Остались вопросы?</p>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 s">
+					<div class="map-question2 map-question">
+						<a class="question-btn">Задайте их нашему менеджеру</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Блок - перед footer-->
+	<section class="footer1">
+		<div class="container">
+			<div class="header-logo">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-5 col-xs-12 wrap">
+						<div class="logo wrap-block">
+							<img src="./img/logo-majorSP.png" alt="Ремонтно строительная компания" />
+						</div>
+						<div class="logo-text wrap-block">
+							<p class="header-text">
+								Ремонтно строительная <br />
+								компания <br />
+								MAJORSP Ремонт
+							</p>
+						</div>
+					</div>
+					<div
+						class="col-lg-5 col-lg-offset-3 col-md-5 col-md-offset-3 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-0 tel">
+						<div class="header-tel call">
+							<p class="header-tel_number">
+								<a href="tel:+84993981882">8 499 398 18 82 </a><br />
+								<a href="tel:+89261373825">8 926 137 38 25</a>
+							</p>
+							<small>Режим работы: с 9:00-21:00</small>
+						</div>
+						<div class="header-btn call">
+							<button class="header-button footer-btn">Заказать звонок</button>
+							<p><a href="mailto:info@major-sp.ru">info@major-sp.ru</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- footer -->
+	<footer class="header ">
+		<div class="small">
+			<p>Создание сайта: <a href="https://vk.com/ezizkurbannazarov/" target="_blank"
+					rel="noopener noreferrer">Landing Land</a></p>
+		</div>
+	</footer>
+
+	<!-- модальное окно -->
+	<div class="popup">
+		<div class="popup-dialog">
+			<div class="popup-content">
+				<button class="popup-close">&times;</button>
+				<h3 class="popup-header main-form_header"> Оставьте заявку</h3>
+				<p class="popup-text main-form_text">и мы вам перезвоним! </p>
+				<div class="form popup-form">
+					<form action="#" method="post">
+						<input class="form-input user-input" required type="text" placeholder="Ваше имя">
+						<input id="phone-mask3" class="form-input tel-input" required type="text"
+							placeholder="Ваш телефон">
+						<button class="form-btn" type="submit">Заказать звонок</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script src="slick/slick.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/script.js"></script>
+	<script src="./js/jquery.maskedinput.min.js"></script>
+	<script>
+		jQuery(function ($) {
+			$("#phone-mask1").mask("+7 (999) 999-99-99");
+			$("#phone-mask2").mask("+7 (999) 999-99-99");
+			$("#phone-mask3").mask("+7 (999) 999-99-99");
+		});
+	</script>
+	<script>
+		$(document).ready(function () {
+
+			// 	$('.main-form').submit(function (event) {
+			// 		event.preventDefault();
+			// 		$.ajax({
+			// 			type: "POST",
+			// 			url: "mailer/smart.php",
+			// 			data: $(this).serialize()
+			// 		}).done(function () {
+			// 			// $(this).find("input").val("");
+			// 			$('.main-form_input').val("");
+			// 			$('.popup2').fadeIn();
+			// 			$('.main-form').trigger("reset");
+			// 		});
+			// 		return false;
+			// 	});
+
+			$('.popup-btn, .footer-btn, .question-btn, .works-btn, .money-btn1, .money-btn2, .money-btn3, .money-btn4')
+				.on('click', function (event) {
+					event.preventDefault();
+					$('.popup').fadeIn();
+				});
+			$('.popup-close').on('click', function (event) {
+				event.preventDefault();
+				$('.popup').fadeOut();
+			});
+
+			$('.projects-slider').slick({
+				infinite: true,
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				dots: true,
+				responsive: [{
+						breakpoint: 991,
+						settings: {
+							slidesToShow: 2,
+							prevArrow: '<button class="slick-prev slick-arrow"></button>',
+							nextArrow: '<button class="slick-next slick-arrow"></button>',
+							slidesToScroll: 1,
+							infinite: true,
+							dots: true
+						}
+					},
+					{
+						breakpoint: 776,
+						settings: {
+							slidesToShow: 1,
+							prevArrow: '<button class="slick-prev slick-arrow"></button>',
+							nextArrow: '<button class="slick-next slick-arrow"></button>',
+							slidesToScroll: 1,
+							infinite: true,
+							dots: true
+						}
+					},
+				]
+			});
+		});
+	</script>
+</body>
+
+</html>
